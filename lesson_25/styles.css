@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+img {
+    width: 140px;
+    height: 40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+
+}
+
+li {
+    display: flex;
+}
+
+li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+li div {
+    height: 40px;
+    width: 40px;
+    background-size: 40px 40px;
+    background-image: url(/images/2.jpg);
+}
+
+li div:not(:last-child) {
+    margin-right: 20px;
+}
+
+.hidden {
+    transform: rotateY(180deg);
+    transition: transform 0.6s linear;
+} 
+
+.visible {
+    transform: rotateY(0deg);
+    transition: transform 0.6s linear;
+}
